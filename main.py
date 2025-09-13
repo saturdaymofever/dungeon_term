@@ -1,4 +1,4 @@
-import random, time, function, constant, monster
+import random, time, function, constant, monster, player
 
 #initialisation des variables
 menu = 1
@@ -20,6 +20,7 @@ potion = 0
 
 #Start Program
 
+player = player.Player()
 
 
 

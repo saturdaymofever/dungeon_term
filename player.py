@@ -1,23 +1,28 @@
-import random, constant, monster
+import random, constant
 
 class Player:
+    coord = None
+    pv = None
+    pw = None
 
-    coord = (10,12)
+    def __init__(self, pv=constant.INITIAL_PV, pw=constant.INITIAL_PW):
+        self.pv = pv
+        self.pw = pw
+        self.move()
+
     def takehit(self):
-        constant.pv -= 1
+        self.pv -= 1
+
     def uppower(self):
         self.pw += 1
-    def move(self, mapV, mapH):
-        self.coord = (random.randint(1,mapV),random.randint(1,mapH))
+
+    def move(self):
+        self.coord = (random.randint(1,constant.mapV),random.randint(1,constant.mapH))
 
 
 
 
-player = Player()
-player2 = Player()
-
-player.takehit()
-player.move(3,3)
 
 
-print(player.coord)
+
+
