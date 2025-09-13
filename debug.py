@@ -1,7 +1,5 @@
-import function
+import player
 
+player = player.Player(30)
 
-
-toto = function.monstername()
-print(toto)
-
+print(player.pv, player.coord)

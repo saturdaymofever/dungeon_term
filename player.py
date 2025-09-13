@@ -6,8 +6,8 @@ class Player:
     pw = None
 
     def __init__(self, pv=constant.INITIAL_PV, pw=constant.INITIAL_PW):
-        self.pv = pv
         self.pw = pw
+        self.pv = pv
         self.move()
 
     def takehit(self):
