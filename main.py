@@ -1,4 +1,4 @@
-import random, time, function
+import random, time, function, constant, monster
 
 #initialisation des variables
 menu = 1
@@ -6,19 +6,13 @@ scoreList = []
 scoreDeath = 0
 chxmenu = None
 endgame = False
-mapH = 3
-mapV = 3
-pvm = 8 #point de vie monstre
-pv = 10 #point de vie
-pw = 2 #power
-sh = 0 #Shield
-pwm = 1 #powermonstre
-shm = None
+
+
 tour = 1
 countDeath = 0
 bgd = False
-monstreCoord = function.monstercood(mapH,mapV)
-characterCoord = [random.randint(1,mapH), random.randint(1,mapV)]
+monstreCoord = function.monstercood(constant.mapH,constant.mapV)
+characterCoord = [random.randint(1,constant.mapH), random.randint(1,constant.mapV)]
 potion = 0
 #bouclierCoord = [random.randint(1,mapH), random.randint(1,mapV)]
 #epeeCoord = [random.randint(1,mapH), random.randint(1,mapV)]

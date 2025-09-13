@@ -1,13 +1,10 @@
-import random
+import random, constant, monster
 
 class Player:
 
-    pv = 10 #point de vie
-    pw = 2 #power
-    sh = 0 #Shield
     coord = (10,12)
     def takehit(self):
-        self.pv -= 1
+        constant.pv -= 1
     def uppower(self):
         self.pw += 1
     def move(self, mapV, mapH):
